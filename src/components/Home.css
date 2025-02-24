@@ -1,0 +1,127 @@
+/* Home Page Container with Background Image */
+.home-container {
+  background-image: url('/Users/maiklzaki/my_site/portfolio/src/img/background_home.jpg'); /* Replace with your chosen background */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px; /* Add top and bottom padding to create space */
+  flex-direction: column;
+}
+
+/* Home Card Container (Holding Multiple Cards) */
+.home-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* General Card Styling */
+.home-card {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  border-radius: 12px; /* Rounded corners */
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.home-card:hover {
+  transform: translateY(-10px); /* Card lifts on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+}
+
+/* Animations for Card Visibility */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title Styling */
+.home-title {
+  font-size: 3rem; /* Larger font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow to make it pop */
+}
+
+/* Text Styling */
+.home-text {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  line-height: 1.6; /* Add some line spacing for readability */
+}
+
+/* Highlighted Text (for "Mike Will" and "Projects") */
+.highlighted-text {
+  font-weight: bold;
+  font-size: 1.3rem; /* Make highlighted text a little bigger */
+  color: #2051c3; /* Golden color to make it stand out */
+}
+
+/* Button Styling */
+.home-btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 50px; /* Rounded edges */
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase; /* Uppercase text for button */
+}
+
+.home-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Button grows on hover */
+}
+
+/* Individual Card Animations */
+.home-card-welcome {
+  animation-delay: 0.2s; /* Delayed for smoother experience */
+}
+
+.home-card-skills {
+  animation-delay: 0.4s;
+}
+
+.home-card-projects {
+  animation-delay: 0.6s;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem; /* Smaller font on mobile */
+  }
+
+  .home-text {
+    font-size: 1rem;
+  }
+
+  .highlighted-text {
+    font-size: 1.2rem; /* Adjust font size for highlighted text on mobile */
+  }
+
+  .home-btn {
+    font-size: 1rem;
+  }
+}

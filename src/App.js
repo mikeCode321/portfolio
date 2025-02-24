@@ -1,21 +1,20 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes here
 import NavBar from './components/Navbar';
 import Home from './components/Home';
-import About from './components/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Footer from './components/Footer'; // Import the Footer component
+import './App.css';
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+      <Footer /> {/* Add the Footer component here */}
     </Router>
   );
 }

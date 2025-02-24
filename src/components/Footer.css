@@ -1,0 +1,82 @@
+/* Footer Styling */
+.footer {
+  background-color: #222; /* Dark background for modern feel */
+  color: #fff;
+  padding: 10px 0; 
+}
+
+/* Footer Section Headings */
+.footer-heading {
+  font-size: 1rem; /* Reduced font size */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px; /* Reduced space between sections */
+}
+
+/* Social Links Styling */
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Reduced gap between icons */
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem; /* Slightly smaller font size */
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #007bff; /* Blue color for hover effect */
+}
+
+/* Contact Info Styling */
+.contact-info {
+  font-size: 0.85rem; /* Smaller font size */
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+/* Copyright Styling */
+footer p {
+  font-size: 0.75rem; /* Smaller font size for copyright */
+  color: #aaa;
+  /* margin-top: 10px; Reduced space between sections */
+}
+
+footer p a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+footer p a:hover {
+  color: #007bff;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    gap: 8px; /* Reduced gap on mobile */
+  }
+
+  .footer-heading {
+    font-size: 0.9rem;
+  }
+  
+  .contact-info {
+    font-size: 0.75rem; /* Smaller font size on mobile */
+  }
+}

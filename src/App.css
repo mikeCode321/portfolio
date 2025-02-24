@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+/* General container for centering content */
+.container {
+  max-width: 1200px; /* Set max-width for the container */
+  margin: 0 auto; /* Center the container */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Flexbox container for the cards */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto new rows */
+  gap: 20px; /* Space between the cards */
+  justify-content: center; /* Center the cards horizontally */
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Each card item */
+.grid-item {
+  flex: 1 1 300px; /* Flex-grow: 1, Flex-shrink: 1, Base width of 300px */
+  max-height: 400px; /* Set a max height for cards to maintain consistency */
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for each card */
+.card {
+  transition: transform 0.3s ease;
+  min-width: 100% !important; /* Ensure cards take up 100% of their container */
+  max-width: 300px; /* Prevent cards from becoming too large */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Styling for the card image */
+.card-img-container {
+  width: 100%; /* Make the container take full width of the card */
+  height: 60%; /* Set height relative to the card's size (60% of the card height) */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing content */
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img-top {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: 100%; /* Ensure the image takes the full height of the container */
+  object-fit: cover; /* Ensures image fits inside the box without stretching */
+  object-position: center; /* Centers the image */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.demo-button{
+  margin-left: 10px;
+}
+
+.demo-cs-button{
+  margin-top: 2px
+}
+
+/* Responsive behavior: When screen size is small, stack the cards vertically */
+@media (max-width: 768px) {
+  .grid-container {
+    justify-content: flex-start; /* Align cards to the left */
   }
-  to {
-    transform: rotate(360deg);
+
+  .grid-item {
+    width: 100%; /* Each card will take up the full width of the container */
   }
 }
+
