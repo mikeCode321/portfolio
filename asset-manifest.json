@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.aeecd4a8.css",
-    "main.js": "/portfolio/static/js/main.35b38cf1.js",
+    "main.css": "/portfolio/static/css/main.83948a4d.css",
+    "main.js": "/portfolio/static/js/main.4c2147cf.js",
     "static/media/drawing_recognizer.png": "/portfolio/static/media/drawing_recognizer.307050928a336f8ddd8c.png",
     "static/media/background_home.jpg": "/portfolio/static/media/background_home.2e14ed2d36e10e6569ff.jpg",
     "static/media/gpt2.png": "/portfolio/static/media/gpt2.5c8edac74153b9371326.png",
     "static/media/smart_workout_buddy.png": "/portfolio/static/media/smart_workout_buddy.aefce4b71a87e611f185.png",
     "static/media/yolo_object_detect.png": "/portfolio/static/media/yolo_object_detect.d3126fc0641b423d1bcb.png",
+    "static/media/CertificateOfCompletion_Learning SQL Programming.png": "/portfolio/static/media/CertificateOfCompletion_Learning SQL Programming.b2facb6dc85b19426aea.png",
     "static/media/media_mix_modeling.png": "/portfolio/static/media/media_mix_modeling.a3d427cc89641f7361a4.png",
+    "static/media/Curriculum Vitae.pdf": "/portfolio/static/media/Curriculum Vitae.1f6397e742b30ce5c5b8.pdf",
+    "static/media/CertificateOfCompletion_Become a Software Developer.png": "/portfolio/static/media/CertificateOfCompletion_Become a Software Developer.caf17578448ea846878b.png",
+    "static/media/CertificateOfCompletion_Data Science Professional Certificate by KNIME.png": "/portfolio/static/media/CertificateOfCompletion_Data Science Professional Certificate by KNIME.169f7ce64012b2161041.png",
+    "static/media/CertificateOfCompletion_Programming Foundations Fundamentals.png": "/portfolio/static/media/CertificateOfCompletion_Programming Foundations Fundamentals.a3ecacc0faa093e97a23.png",
+    "static/media/CertificateOfCompletion_Programming Foundations Databases.png": "/portfolio/static/media/CertificateOfCompletion_Programming Foundations Databases.2959cb107960b5c556b4.png",
     "static/media/ai_car_sim.png": "/portfolio/static/media/ai_car_sim.e7ae3ec3e90393176baf.png",
     "static/media/algo_sim_1.png": "/portfolio/static/media/algo_sim_1.8ff132b234e85545b0bd.png",
     "static/media/ebooks.png": "/portfolio/static/media/ebooks.89b5075bd0cc913909c3.png",
     "static/media/tumor_detect.png": "/portfolio/static/media/tumor_detect.97b6e685ec6376502881.png",
     "static/media/8_bit_computer.png": "/portfolio/static/media/8_bit_computer.de8a7471f24855b993c7.png",
     "index.html": "/portfolio/index.html",
-    "main.aeecd4a8.css.map": "/portfolio/static/css/main.aeecd4a8.css.map",
-    "main.35b38cf1.js.map": "/portfolio/static/js/main.35b38cf1.js.map"
+    "main.83948a4d.css.map": "/portfolio/static/css/main.83948a4d.css.map",
+    "main.4c2147cf.js.map": "/portfolio/static/js/main.4c2147cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.aeecd4a8.css",
-    "static/js/main.35b38cf1.js"
+    "static/css/main.83948a4d.css",
+    "static/js/main.4c2147cf.js"
   ]
 }
