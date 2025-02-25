@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Certificates from './components/Certificates'
 import Footer from './components/Footer';
 import CV from './components/CV'
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/cv" element={<CV />} />
           </Routes>
         </main>
+        <ScrollToTop />
         <Footer />
     </Router>
   );
