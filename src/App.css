@@ -1,16 +1,23 @@
+/* html, body {
+  min-height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+} */
+
 /* General container for centering content */
 .container {
   max-width: 1200px; /* Set max-width for the container */
-  margin: 0 auto; /* Center the container */
+  margin: 0 auto; 
 }
 
 /* Flexbox container for the cards */
 .grid-container {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap onto new rows */
-  gap: 20px; /* Space between the cards */
-  justify-content: center; /* Center the cards horizontally */
-  margin-top: 15px;
+  height: fit-content;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: auto;
   padding-bottom: 15px;
 }
 
@@ -71,5 +78,33 @@
   .grid-item {
     width: 100%; /* Each card will take up the full width of the container */
   }
+}
+
+/* Optional: Make modal image fill the screen */
+.modal-dialog {
+  max-width: 100%;
+  width: 100%;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#projects {
+  flex-grow: 1; /* This allows the #projects section to take up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align content at the top */
 }
 

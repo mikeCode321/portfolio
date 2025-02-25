@@ -11,6 +11,7 @@ import placeholderImg5 from '../img/tumor_detect.png';
 import placeholderImg6 from '../img/ebooks.png';
 import placeholderImg7 from '../img/8_bit_computer.png'
 import placeholderImg8 from '../img/ai_car_sim.png'
+import placeholderImg9 from '../img/algo_sim_1.png'
 
 // Projects data
 const projects = [
@@ -19,7 +20,7 @@ const projects = [
     description: 'An AI-powered workout buddy that tracks your exercises and provides feedback.',
     image: placeholderImg1,
     link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
-    demo: null,
+    demo: 'https://docs.google.com/presentation/d/1Dqh8c6I8UeLtqE49n_uqsVCD3K4QQGWkdAEo0cYCNzo/edit?usp=sharing',
     demo_coming_soon: false
   },
   {
@@ -39,6 +40,22 @@ const projects = [
     demo_coming_soon: false
   },
   {
+    title: 'Algorithm Simulations',
+    description: 'Interactive simulations for pathfinding and sorting, with advanced visuals and animations.',
+    image: placeholderImg9,
+    link: 'https://mikecode321.github.io/algo-visualizer/',
+    demo: 'https://mikecode321.github.io/algo-visualizer/',
+    demo_coming_soon: false
+  },
+  {
+    title: 'AI Car Simulation',
+    description: 'An AI model that learns to drive a car in a simulation environment.',
+    image: placeholderImg8,
+    link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#5',
+    demo: 'https://mikecode321.github.io/ai-car-sim/',
+    demo_coming_soon: false
+  },
+  {
     title: 'YOLO Object Detection',
     description: 'An object detection model that identifies objects in images and videos.',
     image: placeholderImg4,
@@ -46,17 +63,9 @@ const projects = [
     demo: null,
     demo_coming_soon: true,
   },
-  {
-    title: 'Tumor Detection',
-    description: 'A medical model that detects tumors in X-ray and MRI images.',
-    image: placeholderImg5,
-    link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#3',
-    demo: null,
-    demo_coming_soon: true
-  },
-  {
+   {
     title: 'My E-Books',
-    description: 'Free interactive e-books I will be authoring (In Progress)',
+    description: 'Free interactive e-books I will be authoring. Topics range from mathematics to embedded systems. (In Progress)',
     image: placeholderImg6,
     link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#4',
     demo: null,
@@ -71,15 +80,14 @@ const projects = [
     demo_coming_soon: false
   },
   {
-    title: 'AI Car Simulation',
-    description: 'An AI model that learns to drive a car in a simulation environment.',
-    image: placeholderImg8,
-    link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#5',
+    title: 'Tumor Detection',
+    description: 'A medical model that detects tumors in X-ray and MRI images.',
+    image: placeholderImg5,
+    link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#3',
     demo: null,
     demo_coming_soon: true
   },
 ];
-
 
 const Projects = () => {
   return (

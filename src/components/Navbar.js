@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+
 const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
@@ -11,6 +12,7 @@ const NavBar = () => {
         <Nav className="ml-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+          {/* <Nav.Link as={Link} to="/certificates">Certificates</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

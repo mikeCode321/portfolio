@@ -1,8 +1,10 @@
 /* Footer Styling */
-.footer {
-  background-color: #222; /* Dark background for modern feel */
-  color: #fff;
-  padding: 10px 0; 
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Footer Section Headings */
