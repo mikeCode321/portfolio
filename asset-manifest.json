@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.83948a4d.css",
-    "main.js": "/portfolio/static/js/main.a1953e5a.js",
+    "main.js": "/portfolio/static/js/main.16546331.js",
     "static/media/drawing_recognizer.png": "/portfolio/static/media/drawing_recognizer.307050928a336f8ddd8c.png",
     "static/media/background_home.jpg": "/portfolio/static/media/background_home.2e14ed2d36e10e6569ff.jpg",
     "static/media/gpt2.png": "/portfolio/static/media/gpt2.5c8edac74153b9371326.png",
@@ -9,7 +9,7 @@
     "static/media/yolo_object_detect.png": "/portfolio/static/media/yolo_object_detect.d3126fc0641b423d1bcb.png",
     "static/media/CertificateOfCompletion_Learning SQL Programming.png": "/portfolio/static/media/CertificateOfCompletion_Learning SQL Programming.b2facb6dc85b19426aea.png",
     "static/media/media_mix_modeling.png": "/portfolio/static/media/media_mix_modeling.a3d427cc89641f7361a4.png",
-    "static/media/Curriculum Vitae.pdf": "/portfolio/static/media/Curriculum Vitae.c2867ad920c379f0bd13.pdf",
+    "static/media/Curriculum Vitae.pdf": "/portfolio/static/media/Curriculum Vitae.507c2cea4c0e675f6f9c.pdf",
     "static/media/CertificateOfCompletion_Become a Software Developer.png": "/portfolio/static/media/CertificateOfCompletion_Become a Software Developer.caf17578448ea846878b.png",
     "static/media/CertificateOfCompletion_Data Science Professional Certificate by KNIME.png": "/portfolio/static/media/CertificateOfCompletion_Data Science Professional Certificate by KNIME.169f7ce64012b2161041.png",
     "static/media/CertificateOfCompletion_Programming Foundations Fundamentals.png": "/portfolio/static/media/CertificateOfCompletion_Programming Foundations Fundamentals.a3ecacc0faa093e97a23.png",
@@ -21,10 +21,10 @@
     "static/media/8_bit_computer.png": "/portfolio/static/media/8_bit_computer.de8a7471f24855b993c7.png",
     "index.html": "/portfolio/index.html",
     "main.83948a4d.css.map": "/portfolio/static/css/main.83948a4d.css.map",
-    "main.a1953e5a.js.map": "/portfolio/static/js/main.a1953e5a.js.map"
+    "main.16546331.js.map": "/portfolio/static/js/main.16546331.js.map"
   },
   "entrypoints": [
     "static/css/main.83948a4d.css",
-    "static/js/main.a1953e5a.js"
+    "static/js/main.16546331.js"
   ]
 }
