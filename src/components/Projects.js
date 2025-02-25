@@ -12,6 +12,7 @@ import placeholderImg6 from '../img/ebooks.png';
 import placeholderImg7 from '../img/8_bit_computer.png'
 import placeholderImg8 from '../img/ai_car_sim.png'
 import placeholderImg9 from '../img/algo_sim_1.png'
+import placeholderImg10 from '../img/gpt2.png'
 
 // Projects data
 const projects = [
@@ -87,11 +88,19 @@ const projects = [
     demo: null,
     demo_coming_soon: true
   },
+  {
+    title: 'GPT-2 From Scratch: Story Teller AI',
+    description: 'Building a the GPT-2 architecture from scratch to generate stories like outputs. (In Progress)',
+    image: placeholderImg10,
+    link: null,
+    demo: null,
+    demo_coming_soon: true
+  },
 ];
 
 const Projects = () => {
   return (
-    <Container id="projects" className="mt-5">
+    <Container id="projects" className="mt-3">
       <h2 className="text-center mb-3">Projects</h2>
 
       <div className="grid-container">

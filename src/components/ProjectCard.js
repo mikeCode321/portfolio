@@ -19,13 +19,13 @@ const ProjectCard = ({ title, description, image, link, demo, demo_coming_soon }
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <a href={link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        <a href={link} className="btn btn-primary me-1" target="_blank" rel="noopener noreferrer">
           View Project
         </a>
 
         {/* Conditionally render the Demo button if the demo link exists */}
         {demo && (
-          <a href={demo} className="btn btn-secondary demo-button" target="_blank" rel="noopener noreferrer">
+          <a href={demo} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
             Demo
           </a>
         )}

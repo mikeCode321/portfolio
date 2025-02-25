@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer navbar-dark bg-dark">
       <Container>
         <Row className="text-center text-md-left">
           {/* Middle Section: Social Links */}

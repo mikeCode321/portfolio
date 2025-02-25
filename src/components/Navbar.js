@@ -6,7 +6,7 @@ import './Navbar.css';
 const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/" className='ml-4 custom-navbar-brand'>Maikl Awad</Navbar.Brand>
+      <Navbar.Brand href="/portfolio" className='ml-4 custom-navbar-brand'>Maikl Awad</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
