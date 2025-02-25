@@ -38,9 +38,27 @@
   border-radius: 8px;
 }
 
-/* Media Query for smaller screens */
+@media (max-width: 992px) {
+    /* #cv-pdf-container {
+        max-width: 100%;
+        padding: 10px; 
+    }
+
+    #cv-pdf-iframe {
+    display: none;
+  }
+
+  .cv-message {
+    display: block;
+  } */
+
+    /* .cv-iframe {
+        height: 80vh;
+    } */
+}
+
 @media (max-width: 768px) {
-    #cv-pdf-container {
+  #cv-pdf-container {
         max-width: 100%;
         padding: 10px; /* Adds some padding for small screens */
     }
@@ -52,7 +70,6 @@
   .cv-message {
     display: block;
   }
-
     /* .cv-iframe {
         height: 80vh;
     } */

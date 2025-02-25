@@ -7,7 +7,7 @@ const ScrollToTop = () => {
   const [footerHeight, setFooterHeight] = useState(0);
 
   const handleScroll = () => {
-    if (window.scrollY > 1) {
+    if (window.scrollY > (window.innerHeight / 4)) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
