@@ -1,28 +1,34 @@
 import React, { useState } from 'react';
 import CertificiateCard from './CertificateCard.js';
-import { Container, Modal, Button } from 'react-bootstrap';
+import { Container, Modal } from 'react-bootstrap';
 
 
 import placeholderImg1 from '../img/CertificateOfCompletion_Learning SQL Programming.png';
 import placeholderImg2 from '../img/CertificateOfCompletion_Become a Software Developer.png';
 import placeholderImg3 from '../img/CertificateOfCompletion_Programming Foundations Databases.png';
 import placeholderImg4 from '../img/CertificateOfCompletion_Programming Foundations Fundamentals.png';
+import placeholderImg5 from '../img/CertificateOfCompletion_Data Science Professional Certificate by KNIME.png';
 
 const certs = [
-  {
-    title: 'Learning SQL Programming',
-    description: 'Click to enlarge',
-    image: placeholderImg1,
-  },
   {
     title: 'Become a Software Developer',
     description: 'Click to enlarge',
     image: placeholderImg2,
   },
   {
+    title: 'Data Science Professional Certificate',
+    description: 'Click to enlarge',
+    image: placeholderImg5,
+  },
+  {
     title: 'Programming Foundations: Databases',
     description: 'Click to enlarge',
     image: placeholderImg3,
+  },
+  {
+    title: 'Learning SQL Programming',
+    description: 'Click to enlarge',
+    image: placeholderImg1,
   },
   {
     title: 'Programming Foundations: Fundamentals',
