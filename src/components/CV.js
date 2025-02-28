@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import './CV.css';
+import '../styles/CV.css';
 import pdf from "../img/Curriculum Vitae.pdf";
 
 const CV = () => {

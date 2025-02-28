@@ -1,6 +1,6 @@
 // ScrollToTop.js
 import React, { useState, useEffect } from 'react';
-import './ScrollToTop.css'; // Optional: If you have separate styles for the button
+import '../styles/ScrollToTop.css'; // Optional: If you have separate styles for the button
 
 const ScrollToTop = () => {
   const [isScrolled, setIsScrolled] = useState(false);

@@ -33,44 +33,6 @@ main {
   justify-content: center;
 }
 
-.card {
-  transition: transform 0.3s ease;
-  min-width: 100% !important;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-img-container {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 5px;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.demo-button {
-  margin-left: 10px;
-}
-
-.demo-cs-button {
-  margin-top: 2px;
-}
-
 @media (max-width: 768px) {
   .grid-container {
     justify-content: flex-start;
@@ -107,3 +69,4 @@ footer {
   text-align: center;
   padding: 20px;
 }
+

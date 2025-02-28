@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false); // State to track whether the navbar is expanded

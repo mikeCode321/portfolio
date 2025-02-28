@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import '../styles/ProjectCard.css'
 
-const ProjectCard = ({ title, description, image, link, demo, demo_coming_soon }) => {
+const ProjectCard = ({ position, title, description, image, link, demo, demo_coming_soon }) => {
   return (
-    <Card className="project-card">
+    <Card className={`project-card slide ${position}`}>
       <div className="card-img-container">
         <img
           src={image}
@@ -23,14 +24,12 @@ const ProjectCard = ({ title, description, image, link, demo, demo_coming_soon }
           View Project
         </a>
 
-        {/* Conditionally render the Demo button if the demo link exists */}
         {demo && (
           <a href={demo} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">
             Demo
           </a>
         )}
 
-        {/* Conditionally render the 'Demo Coming Soon' button */}
         {demo_coming_soon && (
           <button className="btn btn-secondary demo-cs-button disabled" disabled>
             Demo Coming Soon

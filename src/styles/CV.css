@@ -60,7 +60,7 @@
 @media (max-width: 768px) {
   #cv-pdf-container {
         max-width: 100%;
-        padding: 10px; /* Adds some padding for small screens */
+        padding: 10px;
     }
 
     #cv-pdf-iframe {
