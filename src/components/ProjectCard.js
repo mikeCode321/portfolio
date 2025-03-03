@@ -2,9 +2,9 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import '../styles/ProjectCard.css'
 
-const ProjectCard = ({ position, title, description, image, link, demo, demo_coming_soon }) => {
+const ProjectCard = ({ title, description, image, link, demo, demo_coming_soon }) => {
   return (
-    <Card className={`project-card slide ${position}`}>
+    <Card className={`project-card`}>
       <div className="card-img-container">
         <img
           src={image}

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import '../styles/Home.css';
 
 const Home = () => {
+
   return (
     <div className="home-container">
       <div className="home-card-container">
