@@ -4,7 +4,6 @@ import '../styles/Home.css';
 import { Link } from 'react-router-dom';
 // import smallplanet1 from '../img/small-planet-1.png'
 import spaceship from '../img/Screenshot.png'
-import spaceship2 from '../img/science-fiction-8813654_640.png'
 // import smallplanet2 from '../img/small-planet-2.png'
 import asteroid from '../img/asteroid.png'
 
