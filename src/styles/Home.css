@@ -117,7 +117,7 @@
   background-image: url('../img/ai-planet.png');
   background-size: cover;
   background-position: center;
-  transform: translateZ(-10px) scale(1.);
+  /* transform: translateZ(-10px) scale(1.); */
 }
 
 .content{
