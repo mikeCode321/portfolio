@@ -129,5 +129,13 @@ body {
   display: inline-flex;
   align-items: center;
   font-size: 15px;
-  /* text-transform: lowercase; */
+}
+
+.header h1 span{
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  text-transform: uppercase;
 }

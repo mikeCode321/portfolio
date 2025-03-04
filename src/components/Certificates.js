@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import CertificiateCard from './CertificateCard.js';
 import { Container, Modal } from 'react-bootstrap';
-
+import NavBar from './Navbar';
+import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 import placeholderImg1 from '../img/CertificateOfCompletion_Learning SQL Programming.png';
 import placeholderImg2 from '../img/CertificateOfCompletion_Become a Software Developer.png';
@@ -51,6 +53,8 @@ const Certificates = () => {
   };
 
   return (
+    <>
+    <NavBar />
     <Container id="projects" className="mt-5">
       <h2 className="text-center mb-3">Certificates</h2>
 
@@ -89,6 +93,9 @@ const Certificates = () => {
         </Modal.Body>
       </Modal>
     </Container>
+    <ScrollToTop /> 
+    <Footer />
+    </>
   );
 };
 

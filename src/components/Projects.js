@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard'; 
 import { Container } from 'react-bootstrap';
 import { getProjects } from '../data/projectData'; 
+import NavBar from './Navbar';
+import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -12,6 +15,8 @@ const Projects = () => {
   }, []);
 
   return (
+    <>
+    <NavBar />
     <Container id="projects" className="mt-3">
       <h2 className="text-center mb-3">Projects</h2>
 
@@ -29,8 +34,10 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    
     </Container>
+    <ScrollToTop /> 
+    <Footer />
+    </>
   );
 };
 

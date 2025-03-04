@@ -1,107 +1,626 @@
+.homenav {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+}
+
+.homenav-brand {
+  color: #ffffff; 
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+.homenav-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px; 
+  height: 25px; 
+  padding: 5px;
+  position: relative;
+  display: none;
+}
+
+.homenav-toggler-icon {
+  position: absolute;
+  width: 30px;
+  height: 4px; 
+  background-color: #f8f7f7; 
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+  left: 0;
+}
+
+.homenav-toggler.open .homenav-toggler-icon {
+  background-color: transparent;
+}
+
+.homenav-toggler.open .homenav-toggler-icon::before {
+  display: block;
+  transform: rotate(45deg); /* First bar rotated */
+  top: 0;
+}
+
+.homenav-toggler.open .homenav-toggler-icon::after {
+  display: block;
+  transform: rotate(-45deg); /* Second bar rotated */
+  bottom: 0;
+}
+
+/* Add before and after pseudo elements for the top and bottom bars */
+.homenav-toggler-icon::before,
+.homenav-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #f7f4f4; /* Same as the bar color */
+  border-radius: 4px;
+  transition: all 1.7s ease-in-out;
+  display: none;
+}
+
+.homenavbar-collapse {
+  margin-right: 50px;
+}
+
+.homenavbar-nav {
+  margin: 0;
+  padding-left: 0;
+}
+
+.homenav-item {
+  margin-left: 2rem;
+  display: inline;
+}
+
+.homenav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.homenav-link:hover {
+  color: #007bff; 
+}
+
 .home-container {
-  background-image: url('../img/background_home.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
-  color: white;
+  overflow-x: hidden;
+  perspective: 20px;
+}
+
+.parallax{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px 0px;
-  flex-direction: column;
+  position: relative;
+  transform-style: preserve-3d;
 }
 
-.home-card-container {
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/ai-planet.png');
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(-10px) scale(1.);
+}
+
+.content{
+  color: white;
+  font-size: xxx-large;
+  transform: translateZ(10px);
+  position: relative;
+}
+
+.chome-card{
+  text-align: center;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 800px;
-  width: 100%;
+  align-items: center;
+  padding: 0 10px; 
 }
 
-.home-card {
+.chome-title{
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-right: none;
+  }
+}
+
+.chome-text{
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  
+}
+
+.chome-btn{
+  padding: 8px 8px;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to top, #ff6f61, #ffcc00); /* Gradient for hover effect */
+  margin: 5px 0;
   color: white;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+  position: relative;
+  transition: background 0.3s ease;
+  overflow: hidden;
 }
 
-@keyframes fadeIn {
+.chome-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(to bottom, #022574, #82678a);
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.chome-btn:hover::before {
+  left: 100%;
+}
+
+
+@media (min-width: 992px) {
+  .chome-text{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid; 
+    animation: typing 3s steps(15) forwards, blink 3s step-end forwards;
+  }
+}
+
+#chome-btn-main {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  position: relative;
+  z-index: 1; 
+}
+
+.chome-btn-secondary{
+  padding: 12px 12px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to top, #ff6f61, #ffcc00); /* Gradient for hover effect */
+  /* margin: 5px 0; */
+  color: white;
+}
+
+#chome-btn-main-secondary {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  position: relative;
+  z-index: 1;
+}
+
+.mouse {
+  margin-top: 50px;
+	width: 20px;
+	height: 35px;
+	border: 2px solid #fff;
+	border-radius: 60px;
+	position: absolute;
+  top: 200%;
+  left: calc(50% - 10px);
+	&::before {
+		content: '';
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: #ffffff;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+.scroll{
+  display: none;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 20px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 20px;
+	}
+}
+
+.static {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #212529,
+    #031649
+  );
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: xxx-large;
+}
+
+/*.small-planet-1{
+  position: absolute;
+  width: 80px;
+  transform: translateZ(17px) translateX(-80px) translateY(-15px);
+  animation: small-planet-1 5s linear 2 forwards;
+} */
+
+/* 
+.small-planet-2{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle, #42173a, #26204d);
+  border-radius: 80%;
+} */
+
+.asteroid {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  rotate: 130deg;
+  animation: asteroid 15s ease-in 1 forwards;
+} 
+
+@keyframes asteroid {
   0% {
-    opacity: 0;
-    transform: translateY(50px);
+    right: -5%; 
+    top: 10%;
+    opacity: 1;
   }
   100% {
+    right: 110%; 
+    top: 40%; 
+    width: 95px;
+    height: 95px;
+    opacity: 0.25;
+  }
+}
+
+.spaceship {
+  position: absolute;
+  width: 50px;
+  animation: spaceshipAnimation 10s linear 2 alternate 0s forwards;
+}
+
+@keyframes spaceshipAnimation {
+  0% {
+    left: -60px;
+    top: 50%; 
+    opacity: 0.35;
+  }
+  50% {
+    left: 50%; 
+    top: 40%; 
+    width: 55px;
+    opacity: 0.7;
+  }
+  100% {
+    left: 100vw; 
+    top: 50%; 
+    width: 165px;
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-.home-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 5rem;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+.main-content{
+    width: 100%;
+    position: relative;
 }
 
-.home-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
-  margin-bottom: 20px;
-  font-weight: lighter;
-  letter-spacing: 0.5px;
-  line-height: 1.6;
-  max-width: 100%;
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to bottom, transparent, #031649);
+}
+
+.home-footer{
+  background-color: #212529; 
+  color: #ffffff; 
+  padding: 1rem;
   text-align: center;
-  white-space: normal; 
-  overflow: visible;
-  text-overflow: clip;
+  position: relative;
+  z-index: 100;
 }
 
-.home-btn {
-  font-size: 1.1rem;
-  padding: 12px 30px;
-  border-radius: 50px;
-  background-color: #007bff;
-  color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-transform: uppercase;
+.footer-heading {
+  font-size: 1rem; 
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px; 
 }
 
-.home-btn:hover {
-  background-color: #0056b3;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .home-title {
-    font-size: 3rem;
+.footer-section {
+  margin: 10px;
+  flex-basis: 30%;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px; 
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem; 
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #007bff; 
+}
+
+.contact-info {
+  font-size: 0.85rem; 
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+.footer-bottom p {
+  font-size: 0.75rem; 
+  color: #aaa;
+}
+
+@media (max-width: 992px) {
+  .static p, .static div{
+    font-size: 1.5rem;
+  }
+  
+  .chome-btn-secondary{
+    padding: 8px 8px;
+    font-size: 0.825rem; 
   }
 
-  .home-text {
-    font-size: 1.1rem;
-    max-width: 100%;
-    padding: 0 20px;
+  #chome-btn-main-secondary{
+    font-weight: 500;
   }
 
-  .home-text {
-    font-size: 1.1rem;
+  .chome-title {
+    font-size: 1.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid; 
+    animation: typing 3s steps(15) forwards, blink 3s step-end forwards;
   }
 
-  .home-btn {
-    font-size: 1rem;
+  .chome-text {
+    font-size: 0.65rem;
+    inline-size: 200px;
   }
 
-   .slides-container {
-    height: auto;
+  .chome-btn {
+    padding: 8px 8px;
+    font-size: 0.625rem; 
+  }
+
+   .small-planet-1 {
+    transform: translateZ(17px) translateX(-50px) translateY(-10px); 
+    width: 25px;
+  }
+
+  .small-planet-2 {
+    transform: translateZ(17px) translateX(50px) translateY(-20px); 
+    width: 20px;
+  }
+
+  .homenavbar-collapse {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        #022574,
+        #82678a
+      );  
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    }
+
+  .homenav-item {
+    margin: 1rem 0;
+    display: block;
+  }
+
+  .homenav-link {
+    font-size: 1.25rem; 
+  }
+
+  .homenavbar-collapse.show {
+    display: flex;
+  }
+
+  .homenav{
+    background-color: #022574;
+  }
+
+  .homenav-toggler{
+    display: flex;
   }
 }
 
 @media (max-width: 480px) {
-  .home-text {
-    font-size: 1rem;
-    line-height: 1.4;
+  .scroll {
+    display: block;
+    top: 200%;
+    left: calc(50% - 8px);
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: down 3s infinite;
+    -webkit-animation: down 3s infinite;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: calc(50% - 3px);
+      width: 5px;
+      height: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+
+  @-webkit-keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+
+  .mouse{
+    display: none;
+  }
+
+  .chome-card {
+    padding: 0 15px; 
+  }
+
+  .chome-title {
+    font-size: 1.5rem; 
+  }
+
+  .chome-text {
+    font-size: 0.55rem; 
+  }
+
+  .chome-btn {
+    padding: 5px 8px; 
+    font-size: 0.55rem; 
+  }
+
+  .small-planet-1 {
+    transform: translateZ(17px) translateX(-30px) translateY(-5px);
+    width: 20px;
+  }
+
+  .small-planet-2 {
+    transform: translateZ(17px) translateX(30px) translateY(-10px);
+    width: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .chome-title {
+    font-size: 1.25rem; 
+  }
+
+  .chome-text {
+    font-size: 0.55rem; 
+    inline-size: 150px;
+  }
+
+  .chome-btn {
+    padding: 5px 5px; 
+    font-size: 0.45rem; 
+  }
+
+  .small-planet-1 {
+    transform: translateZ(17px) translateX(-30px) translateY(-5px);
+    width: 20px;
+  }
+
+  .small-planet-2 {
+    transform: translateZ(17px) translateX(30px) translateY(-10px);
+    width: 18px;
   }
 }

@@ -1,6 +1,5 @@
-// ScrollToTop.js
 import React, { useState, useEffect } from 'react';
-import '../styles/ScrollToTop.css'; // Optional: If you have separate styles for the button
+import '../styles/ScrollToTop.css';
 
 const ScrollToTop = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,6 +9,7 @@ const ScrollToTop = () => {
     if (window.scrollY > (window.innerHeight / 4)) {
       setIsScrolled(true);
     } else {
+      console.log('false');
       setIsScrolled(false);
     }
   };

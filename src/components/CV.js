@@ -3,10 +3,13 @@ import { Modal } from "react-bootstrap";
 import "../styles/CV.css";
 import umproject from '../img/Real_Time_IMU_Exercise_Tracking_MeTRIC.png'
 import { Link } from 'react-router-dom';
-// import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import NavBar from './Navbar';
+import Footer from './Footer';
+import ScrollToTop from './ScrollToTop';
 
 function CV() {
     const [sectionStates, setSectionStates] = useState({
+    all: true,
     workExperience: true,
     research: true,
     education: true,
@@ -23,10 +26,24 @@ function CV() {
   const [modalTitle, setModalTitle] = useState("");
 
    const toggleSection = (section) => {
+    if (section === "all") {
+    setSectionStates((prevState) => {
+      const newState = {};
+      const isAllExpanded = !prevState.all; 
+      Object.keys(prevState).forEach((key) => {
+        if (key !== "all") {
+          newState[key] = isAllExpanded;
+        }
+      });
+      newState.all = isAllExpanded; 
+      return newState;
+    });
+  } else {
     setSectionStates((prevState) => ({
       ...prevState,
       [section]: !prevState[section],
     }));
+  }
   };
 
   const handlePreviewClick = (title, image) => {
@@ -35,32 +52,36 @@ function CV() {
     setShowModal(true);
   };
 
-
   const handleCloseModal = () => {
     setShowModal(false);
   };
 
   return (
+    <>
+    <NavBar />
     <div className="container">
       <header className="header">
-        <h1>Curriculum Vitae</h1>
+        <h1>Curriculum Vitae
+          {sectionStates.all ? <span onClick={() => toggleSection("all")}>
+            (collapse all)
+          </span> :
+          <span onClick={() => toggleSection("all")}>
+            (expand all)
+          </span>}
+        </h1>
       </header>
 
       <section className="section work-experience">
         <h2 className="cv-section-header">Work Experience
-          {sectionStates.workExperience ? <span
-            onClick={() => toggleSection("workExperience")}
-          >
+          {sectionStates.workExperience ? <span onClick={() => toggleSection("workExperience")}>
             (collapse)
           </span> :
-          <span
-            onClick={() => toggleSection("workExperience")}
-          >
+          <span onClick={() => toggleSection("workExperience")}>
             (expand)
           </span> }
         </h2>
         {sectionStates.workExperience && (
-          <>
+        <>
         <div className="cv-card">
           <h3>Machine Learning Researcher | University of Michigan</h3>
           <p>Jun 2024 – Jan 2025 | Ann Arbor, MI</p>
@@ -107,7 +128,16 @@ function CV() {
       </section>
 
       <section className="section research">
-        <h2 className="cv-section-header">Research</h2>
+        <h2 className="cv-section-header">Research
+          {sectionStates.research ? <span onClick={() => toggleSection("research")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("research")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.research && (
+        <>
         <div className="cv-card">
           <h3>University of Michigan | Dr. Christopher Brooks | Smart Barbell Collar</h3>
           <p>June 2024 – Current</p>
@@ -123,18 +153,38 @@ function CV() {
             </button>
           </div>
         </div>
+        </>
+        )}
       </section>
 
       <section className="section education">
-        <h2 className="cv-section-header">Education</h2>
+        <h2 className="cv-section-header">Education
+          {sectionStates.education ? <span onClick={() => toggleSection("education")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("education")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.education && (<>
         <div className="cv-card">
           <h3>Oakland University</h3>
           <p>B.I.S focus in Computer Science | GPA: 3.96 / 4.0</p>
         </div>
+        </>)}
       </section>
 
       <section className="section awards">
-        <h2 className="cv-section-header">Awards</h2>
+        <h2 className="cv-section-header">Awards
+          {sectionStates.awards ? <span onClick={() => toggleSection("awards")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("awards")}>
+            (expand)
+          </span>}
+        </h2>
+
+        {sectionStates.awards && (<>
         <div className="cv-card">
           <h3>Oakland University</h3>
           <p>Summa Cum Laude</p>
@@ -143,16 +193,37 @@ function CV() {
           <h3>Oakland University</h3>
           <p>President's List</p>
         </div>
+        </>)}
       </section>
 
       <section className="section certifications">
-        <h2 className="cv-section-header">Certifications</h2>
-        <Link to="/certificates">Certifications Page</Link>
+        <h2 className="cv-section-header">Certifications
+          {sectionStates.certifications ? <span onClick={() => toggleSection("certifications")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("certifications")}>
+            (expand)
+          </span>}
+        </h2>
+
+        {sectionStates.certifications && (<>
+          <div className="cv-card">
+            <Link to="/certificates">Certifications Page</Link>
+          </div>
+        </>)}
       </section>
 
       <section className="section skills">
-        <h2 className="cv-section-header">Skills</h2>
-        <div className="cv-card">
+        <h2 className="cv-section-header">Skills
+          {sectionStates.skills ? <span onClick={() => toggleSection("skills")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("skills")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.skills && (<>
+          <div className="cv-card">
           <ul>
             <li>Advanced Statistics, Advanced Mathematics, Data Science</li>
             <li>Machine Learning, Convolutional Neural Networks (CNN), Reinforcement Learning</li>
@@ -165,10 +236,19 @@ function CV() {
             <li>2D/3D Modeling, 3D Printing</li>
           </ul>
         </div>
+        </>)}
       </section>
 
       <section className="section projects">
-        <h2 className="cv-section-header">Projects</h2>
+        <h2 className="cv-section-header">Projects
+          {sectionStates.projects ? <span onClick={() => toggleSection("projects")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("projects")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.projects && (<>
         <div className="cv-card">
           <ul>
             <li>Smart Barbell Collar (Neural Network and Random Forest)</li>
@@ -181,21 +261,41 @@ function CV() {
           </ul>
           <Link to="/projects">More Projects Here</Link>
         </div>
+        </>)}
       </section>
 
       <section className="section areas-of-interest">
-        <h2 className="cv-section-header">Areas of Interest</h2>
-        <ul>
-          <li>Human Activity Recognition (HAR) and Predictive Metrics in Health and Fitness</li>
-          <li>Autonomous Systems</li>
-          <li>AI for Crime Prediction and Prevention</li>
-          <li>Generative AI and Image Recognition for Visual Intelligence</li>
-          <li>Reinforcement Learning in Simulation-Based Environments</li>
-        </ul>
+        <h2 className="cv-section-header">Areas of Interest
+          {sectionStates.areasOfInterest ? <span onClick={() => toggleSection("areasOfInterest")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("areasOfInterest")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.areasOfInterest && (<>
+        <div className="cv-card">
+          <ul>
+            <li>Human Activity Recognition (HAR) and Predictive Metrics in Health and Fitness</li>
+            <li>Autonomous Systems</li>
+            <li>AI for Crime Prediction and Prevention</li>
+            <li>Generative AI and Image Recognition for Visual Intelligence</li>
+            <li>Reinforcement Learning in Simulation-Based Environments</li>
+          </ul>
+        </div>
+        </>)}
       </section>
 
       <section className="section community-engagement">
-        <h2 className="cv-section-header">Community Engagement</h2>
+        <h2 className="cv-section-header">Community Engagement
+          {sectionStates.communityEngagement ? <span onClick={() => toggleSection("communityEngagement")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("communityEngagement")}>
+            (expand)
+          </span>}
+        </h2>
+        {sectionStates.communityEngagement && (<>
         <div className="cv-card">
           <h3>Habitat for Humanity</h3>
           <p>I have contributed to the construction of 3 homes for low-income families.</p>
@@ -204,6 +304,7 @@ function CV() {
           <h3>Forgotten Harvest</h3>
           <p>I have helped sort and save over 700 pounds of surplus food for community members in need.</p>
         </div>
+        </>)}
       </section>
 
       <Modal show={showModal} onHide={handleCloseModal} size="lg" aria-labelledby="example-modal-sizes-title-lg">
@@ -222,8 +323,10 @@ function CV() {
           />
         </Modal.Body>
       </Modal>
-
     </div>
+    <ScrollToTop /> 
+    <Footer />
+    </>
   );
 }
 
