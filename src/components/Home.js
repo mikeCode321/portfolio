@@ -34,9 +34,6 @@ const Home = () => {
         <div className={`homenavbar-collapse ${expanded ? 'show' : ''}`} id="homenav-bar">
           <ul className="homenavbar-nav">
             <li className="homenav-item">
-              <Link className="homenav-link" to="/" onClick={handleLinkClick}>Home</Link>
-            </li>
-            <li className="homenav-item">
               <Link className="homenav-link" to="/projects" onClick={handleLinkClick}>Projects</Link>
             </li>
             <li className="homenav-item">
