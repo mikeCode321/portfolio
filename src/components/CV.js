@@ -228,7 +228,7 @@ function CV() {
         {sectionStates.skills && (<>
           <div className="cv-card">
           <ul>
-            <li>Advanced Statistics, Advanced Mathematics, Data Science</li>
+            <li>Advanced Statistics, Advanced Mathematics, Algorithms, Data Science</li>
             <li>Machine Learning, Convolutional Neural Networks (CNN), Reinforcement Learning</li>
             <li>Large Language Models (LLM), Bayesian Methods, Data Collection</li>
             <li>Data Preprocessing, Feature Engineering, Data Visualization</li>
