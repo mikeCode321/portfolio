@@ -107,20 +107,23 @@ function CV() {
           <h3>Software Developer | Ford Direct</h3>
           <p>Aug 2022 - Oct 2024 | Dearborn, MI </p>
           <ul>
-            <li>Wrote code to migrate 105,000 members into the HubSpot CRM.</li>
-            <li>Developed a big data API that automatically manages the export of all our member and product data.</li>
-            <li>Developed a filtering system for index files that reduced manual labor by 92%.</li>
-            <li>Developed a rewards widget microservice.</li>
+            <li>Developed a big data framework in Databricks which was adopted by 4 teams.</li>
+            <li>Leveraged Jenkins for CI/CD of our deployments and automated workflows. </li>
+            <li>Developed Azure DevOps pipelines for seamless execution of Databricks jobs. </li>
+            <li>Automated Serenity testing for 3,000+ websites across multiple products. </li>
+            <li>Automated over 1,000 tests, which cut manual effort by 95%. </li>
+            <li>Created HTML reports, ELK and Azure DevOps dashboards for automation results. </li>
+            <li>Integrated SonarQube into Azure DevOps and Bitbucket for enhanced code quality. </li>
+            <li>Led the daily agile stand ups.</li>
           </ul>
         </div>
         <div className="cv-card">
-          <h3>Application Engineer | Automated Machine Systems </h3>
+          <h3>Application Engineer | Automated Machine Systems</h3>
           <p>Oct 2021 - Aug 2022 | Jenison, MI</p>
           <ul>
-            <li>Wrote code to migrate 105,000 members into the HubSpot CRM.</li>
-            <li>Developed a big data API that automatically manages the export of all our member and product data.</li>
-            <li>Developed a filtering system for index files that reduced manual labor by 92%.</li>
-            <li>Developed a rewards widget microservice.</li>
+            <li>Analyzed part data, machine designs, and documentation to deliver precise project kick-offs.</li>
+            <li>Sourced and designed 2D and 3D models with Design for Assembly (DFA) techniques.</li>
+            <li>Engineered efficient conveyor systems per customer requirements.</li>
           </ul>
         </div>
         </>
