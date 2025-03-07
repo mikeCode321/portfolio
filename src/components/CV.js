@@ -78,7 +78,7 @@ function CV() {
           </span> :
           <span onClick={() => toggleSection("workExperience")}>
             (expand)
-          </span> }
+          </span>}
         </h2>
         {sectionStates.workExperience && (
         <>
@@ -143,7 +143,7 @@ function CV() {
         <>
         <div className="cv-card">
           <h3>University of Michigan | Dr. Christopher Brooks | Smart Barbell Collar</h3>
-          <p>June 2024 – Current</p>
+          <p>June 2024 – Jan 2025</p>
           <ul>
             <li>Collected data for 5 distinct exercises from multiple participants.</li>
             <li>Achieved 94% accuracy in real-time exercise detection with our machine learning model.</li>
