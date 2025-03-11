@@ -2,13 +2,49 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import '../styles/Home.css';
 import { Link } from 'react-router-dom';
-// import smallplanet1 from '../img/small-planet-1.png'
 import spaceship from '../img/Screenshot.png'
-// import smallplanet2 from '../img/small-planet-2.png'
 import asteroid from '../img/asteroid.png'
+// import smallplanet2 from '../img/small-planet-2.png'
+// import smallplanet1 from '../img/small-planet-1.png'
 
 const Home = () => {
   const [expanded, setExpanded] = useState(false);
+  const [activeSkill, setActiveSkill] = useState(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const skills = [
+    { id: 'advanced', label: 'Advanced Topics' },
+    { id: 'machineLearning', label: 'Machine Learning & AI' },
+    { id: 'dataScience', label: 'Data Science' },
+    { id: 'softwareDev', label: 'Software Development' },
+    { id: 'embeddedSystems', label: 'Embedded Systems' },
+    { id: 'automation', label: 'Automation' },
+    { id: 'cloud', label: 'Cloud Services' },
+    { id: 'programming', label: 'Programming Languages' },
+    { id: 'databases', label: 'Databases' },
+  ];
+
+  const skillsData = {
+    programming: ["Python", "JavaScript", "Java", "C++", "C", "ReactJS", "HTML", "CSS"],
+    databases: ["MongoDB", "SQL Server", "Elastic Search"],
+    machineLearning: ["Convolutional Neural Networks (CNN)", "Reinforcement Learning", "Large Language Models (LLM)", "Feature Engineering", "Machine Learning Deployment"],
+    dataScience: ["Bayesian Methods", "Data Collection", "Data Preprocessing", "Data Visualization", "A/B Tests"],
+    cloud: ["Azure", "Amazon Web Services (AWS)"],
+    automation: ["Docker", "Kubernetes", "Jenkins"],
+    softwareDev: ["Frontend Development", "API Design", "RESTful APIs", "Backend Development"],
+    embeddedSystems: ["Signal Processing", "2D/3D Modeling", "3D Printing", "Bluetooth Low Energy (BLE)", "Zephyr RTOS", "Circuitry"],
+    advanced: ["Advanced Mathematics", "Advanced Algorithms", "Advanced Statistics", "Data Science"]
+  };
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(prevState => !prevState);
+    setActiveSkill(null);
+  };
+
+  const handleSkillSelect = (skill) => {
+    setActiveSkill(activeSkill === skill ? null : skill);
+    setDropdownOpen(false);  
+  };
 
   const handleLinkClick = () => {
     setExpanded(false); 
@@ -69,23 +105,39 @@ const Home = () => {
 
       <div class='main-content'>
         <div className="shadow"></div>
+
         <div className="static" style={{textAlign:"center"}}>
-            <div>
-              <p style={{textDecoration: "underline", marginBottom: "5px"}}>
-                Hello!
-              </p>
-              <div>
-                More Coming Soon...
-              </div>
-              <div>
-                In the meantime click the link below
-              </div>
-               <div>
-                <button className="chome-btn-secondary">
-                  <Link id='chome-btn-main-secondary' to="/projects" onClick={handleLinkClick}>Explore My Work</Link>
-                </button>
+          <div className="skills-section">
+            <h1 className="skills-header" onClick={handleDropdownToggle} >Skills
+              <span className="dropdown-icon"> {dropdownOpen ? "▲" : "▼"}</span>
+            </h1>
+            <div className="skills-list">
+              <div className={`skills-dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+                {skills.map((skill) => (
+                  <div
+                    key={skill.id}
+                    className={`skill-item ${activeSkill === skill.id ? 'active' : ''}`}
+                    onClick={() => handleSkillSelect(skill.id)}
+                  >
+                    {skill.label}
+                  </div>
+                ))}
               </div>
             </div>
+                
+            {Object.keys(skillsData).map((category) => (
+              <div key={category} className={`skill-content ${activeSkill === category ? 'show' : ''}`}>
+                <div className="scrolling-banner">
+                  {skillsData[category].map((skill, index) => (
+                    <div key={index} className="skill-banner">
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+          </div>
         </div>
       </div>
 
