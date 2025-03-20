@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ce8ddd20.css",
+    "main.css": "/portfolio/static/css/main.0b9cd561.css",
     "main.js": "/portfolio/static/js/main.d4ef9d6b.js",
     "static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.png": "/portfolio/static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.abb5e03c2e1a0c550548.png",
     "static/media/ai-planet.png": "/portfolio/static/media/ai-planet.1b8000c8d2f625165e55.png",
@@ -22,11 +22,11 @@
     "static/media/Screenshot.png": "/portfolio/static/media/Screenshot.6509a11028826afab593.png",
     "static/media/8_bit_computer.png": "/portfolio/static/media/8_bit_computer.de8a7471f24855b993c7.png",
     "index.html": "/portfolio/index.html",
-    "main.ce8ddd20.css.map": "/portfolio/static/css/main.ce8ddd20.css.map",
+    "main.0b9cd561.css.map": "/portfolio/static/css/main.0b9cd561.css.map",
     "main.d4ef9d6b.js.map": "/portfolio/static/js/main.d4ef9d6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce8ddd20.css",
+    "static/css/main.0b9cd561.css",
     "static/js/main.d4ef9d6b.js"
   ]
 }
