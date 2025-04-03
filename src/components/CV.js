@@ -171,6 +171,12 @@ function CV() {
         </h2>
         {sectionStates.education && (<>
         <div className="cv-card">
+          <h3>University of Michigan</h3>
+          <p>Master of Science in Computer Science (In-progress)</p>
+        </div>
+        </>)}
+        {sectionStates.education && (<>
+        <div className="cv-card">
           <h3>Oakland University</h3>
           <p>B.I.S focus in Computer Science | GPA: 3.96 / 4.0</p>
         </div>
