@@ -93,7 +93,7 @@ function CV() {
             <li>Designed and 3D printed custom enclosures for all project components.</li>
           </ul>
         </div>
-        <div className="cv-card">
+        {/* <div className="cv-card">
           <h3>Software Developer Intern | True Community Credit Union</h3>
           <p>Oct 2024 - March 2025 | Westland, MI</p>
           <ul>
@@ -102,7 +102,7 @@ function CV() {
             <li>Developed a filtering system for index files that reduced manual labor by 92%.</li>
             <li>Developed a rewards widget microservice.</li>
           </ul>
-        </div>
+        </div> */}
         <div className="cv-card">
           <h3>Software Developer | Ford Direct</h3>
           <p>Aug 2022 - Oct 2024 | Dearborn, MI </p>
