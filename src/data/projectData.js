@@ -8,6 +8,7 @@ import placeholderImg7 from '../img/8_bit_computer.png';
 import placeholderImg8 from '../img/ai_car_sim.png';
 import placeholderImg9 from '../img/algo_sim_1.png';
 import placeholderImg10 from '../img/gpt2.png';
+import placeholderImg11 from '../img/soccer-cv-ai.png';
 
 export const getProjects = () => {
   return [
@@ -18,6 +19,14 @@ export const getProjects = () => {
       link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
       demo: 'https://docs.google.com/presentation/d/1Dqh8c6I8UeLtqE49n_uqsVCD3K4QQGWkdAEo0cYCNzo/edit?usp=sharing',
       demo_coming_soon: false
+    },
+    {
+      title: 'Deep Learning Soccer Analysis and Player Tracking',
+      description: 'A deep learning computer vision approach to derive player metrics and tracking.',
+      image: placeholderImg11,
+      link: null,
+      demo: null,
+      demo_coming_soon: true
     },
     {
       title: 'Drawing Recognizer',
