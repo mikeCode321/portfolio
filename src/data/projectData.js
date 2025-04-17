@@ -63,15 +63,15 @@ export const getProjects = () => {
       title: 'My E-Books',
       description: 'Free interactive e-books I will be authoring. Topics range from mathematics to embedded systems. (In Progress)',
       image: placeholderImg6,
-      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#4',
+      link: null,
       demo: null,
       demo_coming_soon: true
     },
     {
       title: '8-Bit Computer From Scratch (TTL Chips)',
-      description: 'Building an 8-bit computer from scratch using TTL chips (In Progress)',
+      description: 'Building an 8-bit computer from scratch using TTL chips',
       image: placeholderImg7,
-      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#4',
+      link: null,
       demo: null,
       demo_coming_soon: false
     },
@@ -85,7 +85,7 @@ export const getProjects = () => {
     },
     {
       title: 'GPT-2 From Scratch: Story Teller AI',
-      description: 'Building a GPT-2 architecture from scratch to generate stories like outputs. (In Progress)',
+      description: 'Building a GPT-2 architecture from scratch to generate stories like outputs.',
       image: placeholderImg10,
       link: null,
       demo: null,
