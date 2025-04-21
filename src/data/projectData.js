@@ -9,6 +9,7 @@ import placeholderImg8 from '../img/ai_car_sim.png';
 import placeholderImg9 from '../img/algo_sim_1.png';
 import placeholderImg10 from '../img/gpt2.png';
 import placeholderImg11 from '../img/soccer-cv-ai.png';
+import video from '../img/deep-learning-soccer.mp4'
 
 export const getProjects = () => {
   return [
@@ -18,23 +19,19 @@ export const getProjects = () => {
       image: placeholderImg1,
       link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
       demo: 'https://docs.google.com/presentation/d/1Dqh8c6I8UeLtqE49n_uqsVCD3K4QQGWkdAEo0cYCNzo/edit?usp=sharing',
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'Deep Learning Soccer Analysis and Player Tracking',
-      description: 'A deep learning computer vision approach to derive player metrics and tracking.',
+      description: 'A computer vision approach to derive player metrics and tracking.',
       image: placeholderImg11,
       link: null,
       demo: null,
-      demo_coming_soon: true
-    },
-    {
-      title: 'Drawing Recognizer',
-      description: 'A drawing recognition model that identifies the object you draw.',
-      image: placeholderImg2,
-      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
-      demo: 'https://mikecode321.github.io/drawing_recognizer_ml/',
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: true,
+      video: video
     },
     {
       title: 'Media Mix Modeling',
@@ -42,7 +39,19 @@ export const getProjects = () => {
       image: placeholderImg3,
       link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#2',
       demo: null,
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: null,
+      video: null
+    },
+    {
+      title: 'Drawing Recognizer',
+      description: 'A drawing recognition model that identifies the object you draw.',
+      image: placeholderImg2,
+      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
+      demo: 'https://mikecode321.github.io/drawing_recognizer_ml/',
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'Algorithm Simulations',
@@ -50,15 +59,19 @@ export const getProjects = () => {
       image: placeholderImg9,
       link: 'https://mikecode321.github.io/algo-visualizer/',
       demo: 'https://mikecode321.github.io/algo-visualizer/',
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'AI Car Simulation',
       description: 'An AI model that learns to drive a car in a simulation environment.',
       image: placeholderImg8,
-      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#5',
+      link: 'https://mikecode321.github.io/ai-car-sim/',
       demo: 'https://mikecode321.github.io/ai-car-sim/',
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'YOLO Object Detection',
@@ -66,23 +79,9 @@ export const getProjects = () => {
       image: placeholderImg4,
       link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#3',
       demo: null,
-      demo_coming_soon: true,
-    },
-    {
-      title: 'My E-Books',
-      description: 'Free interactive e-books I will be authoring. Topics range from mathematics to embedded systems. (In Progress)',
-      image: placeholderImg6,
-      link: null,
-      demo: null,
-      demo_coming_soon: true
-    },
-    {
-      title: '8-Bit Computer From Scratch (TTL Chips)',
-      description: 'Building an 8-bit computer from scratch using TTL chips',
-      image: placeholderImg7,
-      link: null,
-      demo: null,
-      demo_coming_soon: false
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'Tumor Detection',
@@ -90,15 +89,39 @@ export const getProjects = () => {
       image: placeholderImg5,
       link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#3',
       demo: null,
-      demo_coming_soon: true
+      demo_coming_soon: false,
+      asset: null,
+      video: null
     },
     {
       title: 'GPT-2 From Scratch: Story Teller AI',
       description: 'Building a GPT-2 architecture from scratch to generate stories like outputs.',
       image: placeholderImg10,
+      link: 'https://github.com/mikeCode321/echoGPT/blob/main/echoGPT.ipynb',
+      demo: null,
+      demo_coming_soon: false,
+      asset: null,
+      video: null
+    },
+    {
+      title: 'My E-Books',
+      description: 'Free interactive e-books I will be authoring. Topics range from mathematics to embedded systems.',
+      image: placeholderImg6,
       link: null,
       demo: null,
-      demo_coming_soon: true
+      demo_coming_soon: true,
+      asset: null,
+      video: null
+    },
+    {
+      title: '8-Bit Computer From Scratch (TTL Chips)',
+      description: 'Building an 8-bit computer from scratch using TTL chips',
+      image: placeholderImg7,
+      link: null,
+      demo: null,
+      demo_coming_soon: true,
+      asset: null,
+      video: null
     },
   ];
 };

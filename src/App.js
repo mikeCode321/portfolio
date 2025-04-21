@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates'
 import CV from './components/CV'
+import DeepLearningSoccerPDF from './components/PDFViewer';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/cv" element={<CV />} />
+            <Route path="/pdf" element={<DeepLearningSoccerPDF />}/>
           </Routes>
         </main>
     </Router>

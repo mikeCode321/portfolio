@@ -30,6 +30,8 @@ const Projects = () => {
               link={project.link}
               demo={project.demo} 
               demo_coming_soon={project.demo_coming_soon}
+              asset={project.asset}
+              video={project.video}
             />
           </div>
         ))}

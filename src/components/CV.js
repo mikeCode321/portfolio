@@ -19,6 +19,7 @@ function CV() {
     projects: true,
     areasOfInterest: true,
     communityEngagement: true,
+    publications: true
   });
 
   const [showModal, setShowModal] = useState(false);
@@ -202,6 +203,26 @@ function CV() {
           <h3>Oakland University</h3>
           <p>President's List</p>
         </div>
+        </>)}
+      </section>
+
+      <section className="section publications">
+        <h2 className="cv-section-header">Publications
+          {sectionStates.certifications ? <span onClick={() => toggleSection("publications")}>
+            (collapse)
+          </span> :
+          <span onClick={() => toggleSection("publications")}>
+            (expand)
+          </span>}
+        </h2>
+
+        {sectionStates.publications && (<>
+          <div className="cv-card">
+            M. Awad and C. Brooks, “Real-Time Performance Tracking in Barbell Training - A Novel IMU-Based Approach,” Deep Blue Repo, Nov. 2024, doi: https://dx.doi.org/10.7302/24869.
+          </div>
+          <div className="cv-card">
+            M. Awad, “Deep Learning for Soccer: Player Tracking and Team Performance Insights,” Deep Blue Repo, doi: [Coming Soon].
+          </div>
         </>)}
       </section>
 
