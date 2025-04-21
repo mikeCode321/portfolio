@@ -17,7 +17,7 @@ export const getProjects = () => {
       title: 'Smart Workout Buddy',
       description: 'An AI-powered workout buddy that tracks your exercises and provides feedback.',
       image: placeholderImg1,
-      link: 'https://www.canva.com/design/DAGbvO3CoaY/P3qtjO6CgYOIMIyzpZ4Ucg/view#1',
+      link: 'https://dx.doi.org/10.7302/24869',
       demo: 'https://docs.google.com/presentation/d/1Dqh8c6I8UeLtqE49n_uqsVCD3K4QQGWkdAEo0cYCNzo/edit?usp=sharing',
       demo_coming_soon: false,
       asset: null,
