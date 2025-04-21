@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0b9cd561.css",
-    "main.js": "/portfolio/static/js/main.a588cbfd.js",
+    "main.js": "/portfolio/static/js/main.f0b4cfbf.js",
+    "static/media/deep-learning-soccer.mp4": "/portfolio/static/media/deep-learning-soccer.393493227264da93d715.mp4",
     "static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.png": "/portfolio/static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.abb5e03c2e1a0c550548.png",
+    "static/media/deep-learning-soccer.pdf": "/portfolio/static/media/deep-learning-soccer.9741af1c03297824d053.pdf",
     "static/media/ai-planet.png": "/portfolio/static/media/ai-planet.1b8000c8d2f625165e55.png",
     "static/media/soccer-cv-ai.png": "/portfolio/static/media/soccer-cv-ai.03f36ef747ac6dd6841c.png",
     "static/media/drawing_recognizer.png": "/portfolio/static/media/drawing_recognizer.307050928a336f8ddd8c.png",
@@ -24,10 +26,10 @@
     "static/media/8_bit_computer.png": "/portfolio/static/media/8_bit_computer.de8a7471f24855b993c7.png",
     "index.html": "/portfolio/index.html",
     "main.0b9cd561.css.map": "/portfolio/static/css/main.0b9cd561.css.map",
-    "main.a588cbfd.js.map": "/portfolio/static/js/main.a588cbfd.js.map"
+    "main.f0b4cfbf.js.map": "/portfolio/static/js/main.f0b4cfbf.js.map"
   },
   "entrypoints": [
     "static/css/main.0b9cd561.css",
-    "static/js/main.a588cbfd.js"
+    "static/js/main.f0b4cfbf.js"
   ]
 }
