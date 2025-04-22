@@ -9,7 +9,7 @@ import placeholderImg8 from '../img/ai_car_sim.png';
 import placeholderImg9 from '../img/algo_sim_1.png';
 import placeholderImg10 from '../img/gpt2.png';
 import placeholderImg11 from '../img/soccer-cv-ai.png';
-import video from '../img/deep-learning-soccer.mp4'
+// import video from '../img/deep-learning-soccer.mp4'
 
 export const getProjects = () => {
   return [
@@ -31,7 +31,7 @@ export const getProjects = () => {
       demo: null,
       demo_coming_soon: false,
       asset: true,
-      video: video
+      video: true
     },
     {
       title: 'Media Mix Modeling',

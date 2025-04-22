@@ -67,13 +67,13 @@ const ProjectCard = ({ title, description, image, link, demo, demo_coming_soon, 
         </Modal.Header>
         <Modal.Body>
           <div className="ratio ratio-16x9">
-            <iframe
+            {/* <iframe
               src={video}
               title="Video Demo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               style={{ width: '100%', height: '100%' }}
-            ></iframe>
+            ></iframe> */}
           </div>
         </Modal.Body>
         <Modal.Footer>
