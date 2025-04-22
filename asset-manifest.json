@@ -1,12 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0b9cd561.css",
-    "main.js": "/portfolio/static/js/main.d604fb2a.js",
-    "static/media/deep-learning-soccer.mp4": "/portfolio/static/media/deep-learning-soccer.393493227264da93d715.mp4",
+    "main.js": "/portfolio/static/js/main.f3a2a9ff.js",
     "static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.png": "/portfolio/static/media/Real_Time_IMU_Exercise_Tracking_MeTRIC.abb5e03c2e1a0c550548.png",
     "static/media/deep-learning-soccer.pdf": "/portfolio/static/media/deep-learning-soccer.9741af1c03297824d053.pdf",
     "static/media/ai-planet.png": "/portfolio/static/media/ai-planet.1b8000c8d2f625165e55.png",
-    "static/media/soccer-cv-ai.png": "/portfolio/static/media/soccer-cv-ai.03f36ef747ac6dd6841c.png",
+    "static/media/soccer-cv-ai.png": "/portfolio/static/media/soccer-cv-ai.b40ac9e3a24def710756.png",
     "static/media/drawing_recognizer.png": "/portfolio/static/media/drawing_recognizer.307050928a336f8ddd8c.png",
     "static/media/gpt2.png": "/portfolio/static/media/gpt2.5c8edac74153b9371326.png",
     "static/media/smart_workout_buddy.png": "/portfolio/static/media/smart_workout_buddy.aefce4b71a87e611f185.png",
@@ -26,10 +25,10 @@
     "static/media/8_bit_computer.png": "/portfolio/static/media/8_bit_computer.de8a7471f24855b993c7.png",
     "index.html": "/portfolio/index.html",
     "main.0b9cd561.css.map": "/portfolio/static/css/main.0b9cd561.css.map",
-    "main.d604fb2a.js.map": "/portfolio/static/js/main.d604fb2a.js.map"
+    "main.f3a2a9ff.js.map": "/portfolio/static/js/main.f3a2a9ff.js.map"
   },
   "entrypoints": [
     "static/css/main.0b9cd561.css",
-    "static/js/main.d604fb2a.js"
+    "static/js/main.f3a2a9ff.js"
   ]
 }
