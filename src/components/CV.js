@@ -94,8 +94,8 @@ function CV() {
             <li>Designed and 3D printed custom enclosures for all project components.</li>
           </ul>
         </div>
-        {/* <div className="cv-card">
-          <h3>Software Developer Intern | True Community Credit Union</h3>
+        <div className="cv-card">
+          <h3>Software Developer | True Community Credit Union</h3>
           <p>Oct 2024 - March 2025 | Westland, MI</p>
           <ul>
             <li>Wrote code to migrate 105,000 members into the HubSpot CRM.</li>
@@ -103,7 +103,7 @@ function CV() {
             <li>Developed a filtering system for index files that reduced manual labor by 92%.</li>
             <li>Developed a rewards widget microservice.</li>
           </ul>
-        </div> */}
+        </div>
         <div className="cv-card">
           <h3>Software Developer | Ford Direct</h3>
           <p>Aug 2022 - Oct 2024 | Dearborn, MI </p>
@@ -118,7 +118,7 @@ function CV() {
             <li>Led the daily agile stand ups.</li>
           </ul>
         </div>
-        <div className="cv-card">
+        {/* <div className="cv-card">
           <h3>Application Engineer | Automated Machine Systems</h3>
           <p>Oct 2021 - Aug 2022 | Jenison, MI</p>
           <ul>
@@ -126,7 +126,7 @@ function CV() {
             <li>Sourced and designed 2D and 3D models with Design for Assembly (DFA) techniques.</li>
             <li>Engineered efficient conveyor systems per customer requirements.</li>
           </ul>
-        </div>
+        </div> */}
         </>
       )}
       </section>
