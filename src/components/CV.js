@@ -96,7 +96,7 @@ function CV() {
         </div>
         <div className="cv-card">
           <h3>Software Developer | True Community Credit Union</h3>
-          <p>Oct 2024 - March 2025 | Westland, MI</p>
+          <p>Oct 2024 - Current | Westland, MI</p>
           <ul>
             <li>Wrote code to migrate 105,000 members into the HubSpot CRM.</li>
             <li>Developed a big data API that automatically manages the export of all our member and product data.</li>
