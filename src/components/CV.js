@@ -221,7 +221,7 @@ function CV() {
             M. Awad and C. Brooks, “Real-Time Performance Tracking in Barbell Training - A Novel IMU-Based Approach,” Deep Blue Repo, Nov. 2024, doi: https://dx.doi.org/10.7302/24869.
           </div>
           <div className="cv-card">
-            M. Awad, “Deep Learning for Soccer: Player Tracking and Team Performance Insights,” Deep Blue Repo, doi: [Coming Soon].
+            M. Awad, “Deep Learning for Soccer: Player Tracking and Team Performance Insights,” Feb. 2025, Available: https://mikecode321.github.io/portfolio/#/pdf
           </div>
         </>)}
       </section>
