@@ -84,7 +84,7 @@ function CV() {
         {sectionStates.workExperience && (
         <>
         <div className="cv-card">
-          <h3>Machine Learning Researcher | University of Michigan</h3>
+          <h3>Machine Learning Research Intern | University of Michigan</h3>
           <p>Jun 2024 – Jan 2025 | Ann Arbor, MI</p>
           <ul>
             <li>Applied the full machine learning cycle; from data collection and model training to optimization.</li>
